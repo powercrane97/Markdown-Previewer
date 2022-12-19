@@ -1,0 +1,115 @@
+body {
+  background: linear-gradient(to bottom, powderblue, lightsalmon);
+  /* height: 100%; */
+}
+
+html {
+  /* background: linear-gradient(to top, lightgray, powderblue); */
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.editor-wrapper {
+  border: solid lightgray 1px;
+  min-height: 30%;
+  /* height: 30%; */
+  margin-bottom: 2rem;
+  overflow-wrap: break-word;
+  box-shadow: 3px 3px 10px;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  /* box-sizing: content-box; */
+}
+
+.tab {
+  width: 100%;
+  background-color: transparent;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  text-align: center;
+  /* border-top: transparent 1px solid; */
+  background-clip: padding-box;
+  /* max-height: 35px; */
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  box-sizing: border-box;
+  border-radius: 0;
+  margin-bottom: 0;
+  display: block;
+  background-color: rgba(245, 255, 250, 0);
+  padding: 0.5rem;
+  font-size: 1.2em;
+  border-color: transparent;
+}
+
+.preview-wrapper {
+  display: block;
+  border: 1px solid lightgrey;
+  background-color: rgba(245, 255, 250, 0.632);
+  box-shadow: 3px 3px 10px;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.App {
+  width: 50vw;
+  /* min-height: 100vh; */
+  /* height: 100vh; */
+}
+
+.tab p {
+  font-size: 0.5rem;
+}
+
+#preview {
+  font-size: rem;
+  text-align: left;
+  color: black;
+  margin: 1rem auto;
+  min-height: 20%;
+}
+
+.preview-content {
+  padding: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  font-weight: 500;
+}
+
+#preview h1 {
+  border-bottom: 2px solid black;
+}
+
+#preview h2 {
+  border-bottom: 1px solid black;
+}
+
+.fullscreen-btn {
+  display: flex;
+  place-items: center;
+}
+
+.tab span {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1.25rem;
+}
+
+.fullscreen {
+  height: 90vh;
+}
+
+button {
+  background-color: transparent !important;
+}
