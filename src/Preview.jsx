@@ -2,27 +2,33 @@ import { marked } from "marked";
 import { useState, useEffect } from "react";
 import Buttons from "./Buttons";
 import FullScreenButton from "./FullScreenButton";
+import hljs from "highlight.js";
+import "highlight.js/styles/googlecode.css";
+
+hljs.configure({
+  cssSelector: "code",
+  languages: ["javascript", "css", "html"],
+});
+
+marked.setOptions({
+  gfm: true,
+  breaks: true,
+  headerIds: false,
+  //   langPrefix: "hljs language-",
+  highlight: code => hljs.highlightAll(),
+});
 
 export default function Preview({ content, onClick, toggled }) {
-  const fullscreen = toggled ? "fullscreen" : "";
-  const markedContent = marked(content, {
-    gfm: true,
-    breaks: true,
-    headerIds: false,
-  });
+  //   const fullscreen = toggled ? " fullscreen" : "";
+  const markedContent = marked(content);
 
-  // useEffect(() => {
-  // 	return console.log(markedContent);
-  // })
-
-  console.log(markedContent);
   return (
     <div className='preview-wrapper'>
       <div className='tab'>
         <span>Preview</span>
         <Buttons onClick={onClick} />
       </div>
-      <div className={"preview-content" + fullscreen}>
+      <div className='preview-content'>
         <div id='preview' dangerouslySetInnerHTML={{ __html: markedContent }} />
       </div>
     </div>

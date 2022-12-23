@@ -1,12 +1,13 @@
-import FullScreenButton from "./FullScreenButton"
+import FullScreenButton from "./FullScreenButton";
+import ClearButton from "./ClearButton";
 
-function Buttons({onClick}) {
-	return (
-		<>
-			{/* // clear button */}
-			<FullScreenButton onClick={onClick}/>
-		</>
-	)
+function Buttons({ onClick, onClear, toggled }) {
+  return (
+    <div className='buttons'>
+      <ClearButton onClick={onClear} />
+      <FullScreenButton onClick={onClick} toggled={toggled} />
+    </div>
+  );
 }
 
 export default Buttons;

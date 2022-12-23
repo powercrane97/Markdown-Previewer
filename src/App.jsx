@@ -3,7 +3,6 @@ import "./App.css";
 import Editor from "./Editor";
 import Preview from "./Preview";
 import initialState from "./intialState";
-
 function App() {
   const [input, setInput] = useState(initialState);
   const [fullEditor, setFullEditor] = useState(false);
@@ -11,6 +10,10 @@ function App() {
 
   function handleInput(e) {
     setInput(input => e.target.value);
+  }
+
+  function clearInput() {
+    setInput(input => "");
   }
 
   function handleEditor() {
@@ -28,6 +31,7 @@ function App() {
           input={input}
           onChange={handleInput}
           onClick={handleEditor}
+          onClear={clearInput}
           toggled={fullEditor}
         />
       )}

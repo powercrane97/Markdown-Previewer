@@ -2,7 +2,7 @@ import { useState } from "react";
 import FullScreenButton from "./FullScreenButton";
 import Buttons from "./Buttons";
 
-export default function Editor({ input, onChange, onClick, toggled }) {
+export default function Editor({ input, onChange, onClick, toggled, onClear }) {
   // const [toggled, setToggled] = useState(true);
   const fullscreen = toggled ? "fullscreen" : "";
   return (
@@ -11,14 +11,14 @@ export default function Editor({ input, onChange, onClick, toggled }) {
         {/* <FullScreenButton className="fullscreen-btn"/> */}
         {/* <div id="test"></div> */}
         <span>Editor</span>
-        <Buttons onClick={onClick} />
+        <Buttons onClick={onClick} onClear={onClear} toggled={toggled} />
       </div>
       <textarea
         name='editor'
         id='editor'
         onChange={onChange}
         rows='10'
-        defaultValue={input}
+        value={input}
         className={fullscreen}
       ></textarea>
     </div>
