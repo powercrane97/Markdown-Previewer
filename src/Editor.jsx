@@ -2,7 +2,7 @@ import { useState } from "react";
 import FullScreenButton from "./FullScreenButton";
 import Buttons from "./Buttons";
 
-export default function Editor({ input, onChange, onClick, toggled, onClear }) {
+function Editor({ input, onChange, onClick, toggled, onClear }) {
   // const [toggled, setToggled] = useState(true);
   const fullscreen = toggled ? "fullscreen" : "";
   return (
@@ -24,3 +24,5 @@ export default function Editor({ input, onChange, onClick, toggled, onClear }) {
     </div>
   );
 }
+
+export default Editor;

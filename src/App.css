@@ -79,6 +79,8 @@ textarea {
   padding: 1.2rem;
   min-height: 15rem;
   font-size: 1.2em;
+  word-wrap: normal; /* test */
+  overflow: visible; /* test */
 }
 
 blockquote {

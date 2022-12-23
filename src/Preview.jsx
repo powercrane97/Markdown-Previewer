@@ -18,7 +18,7 @@ marked.setOptions({
   highlight: code => hljs.highlightAll(),
 });
 
-export default function Preview({ content, onClick, toggled }) {
+function Preview({ content, onClick, toggled }) {
   //   const fullscreen = toggled ? " fullscreen" : "";
   const markedContent = marked(content);
 
@@ -34,3 +34,5 @@ export default function Preview({ content, onClick, toggled }) {
     </div>
   );
 }
+
+export default Preview;
