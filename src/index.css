@@ -3,7 +3,7 @@
   font-size: 16px;
   line-height: normal;
   font-weight: 400;
-  background-color: linear-gradient(to bottom, #00b2cb, #ffa200);
+  background-color: linear-gradient(to right, #00b2cb, #ffa200);
 
   /* color-scheme: light dark; */
   /* color: rgba(255, 255, 255, 0.87); */
@@ -57,23 +57,13 @@ button:hover {
   border-color: black;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    color: #213547;
-    background-color: linear-gradient(to bottom, #00b2cb, #ffa200) !important;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+    background-color: black;
   }
 }
 
 @media screen and (max-width: 576px) {
-  /* body {
-    background-color: purple;
-  } */
   .App {
     width: 90vw;
   }
