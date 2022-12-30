@@ -1,7 +1,5 @@
 import { marked } from "marked";
-import { useState, useEffect } from "react";
 import Buttons from "./Buttons";
-import FullScreenButton from "./FullScreenButton";
 import hljs from "highlight.js";
 import "highlight.js/styles/googlecode.css";
 
@@ -26,7 +24,7 @@ function Preview({ content, onClick, toggled }) {
     <div className='preview-wrapper'>
       <div className='tab'>
         <span>Preview</span>
-        <Buttons onClick={onClick} />
+        <Buttons onClick={onClick} toggled={toggled} />
       </div>
       <div className='preview-content'>
         <div id='preview' dangerouslySetInnerHTML={{ __html: markedContent }} />
