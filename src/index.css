@@ -1,7 +1,7 @@
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif, Helvetica, Arial;
   font-size: 16px;
-  line-height: 24px;
+  line-height: normal;
   font-weight: 400;
 
   color-scheme: light dark;
@@ -39,7 +39,6 @@ body {
 
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -71,10 +70,10 @@ button:hover {
 }
 
 @media screen and (max-width: 576px) {
-  body {
+  /* body {
     background-color: purple;
-  }
-  :root {
-    font-size: 5px;
+  } */
+  .App {
+    width: 95vw;
   }
 }

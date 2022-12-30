@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, powderblue, lightsalmon);
+  background: linear-gradient(to bottom, #00b2cb, #ffa200);
   /* height: 100%; */
 }
 
@@ -60,7 +60,8 @@ textarea {
 }
 
 .App {
-  width: 50vw;
+  width: 75vw;
+  max-width: 100%;
   /* min-height: 100vh; */
   /* height: 100vh; */
 }
