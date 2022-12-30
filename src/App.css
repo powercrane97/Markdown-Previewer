@@ -47,6 +47,7 @@ textarea {
   padding: 1.2rem;
   font-size: 1.2em;
   border-color: transparent;
+  outline: none;
 }
 
 .preview-wrapper {
