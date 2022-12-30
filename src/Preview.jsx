@@ -6,6 +6,7 @@ import "highlight.js/styles/googlecode.css";
 hljs.configure({
   cssSelector: "code",
   languages: ["javascript", "css", "html"],
+  ignoreUnescapedHTML: true,
 });
 
 marked.setOptions({
@@ -17,7 +18,6 @@ marked.setOptions({
 });
 
 function Preview({ content, onClick, toggled }) {
-  //   const fullscreen = toggled ? " fullscreen" : "";
   const markedContent = marked(content);
 
   return (

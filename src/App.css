@@ -57,6 +57,7 @@ textarea {
   box-shadow: 3px 3px 10px;
   border-radius: 0.75rem;
   overflow: hidden;
+  overflow-wrap: break-word;
 }
 
 .App {
@@ -74,15 +75,14 @@ textarea {
   font-size: rem;
   text-align: left;
   color: black;
-  margin: 1rem auto;
+  overflow: visible;
+  overflow-wrap: break-word;
 }
 
 .preview-content {
   padding: 1.2rem;
   min-height: 15rem;
   font-size: 1.2em;
-  word-wrap: normal; /* test */
-  overflow: visible; /* test */
 }
 
 blockquote {
@@ -115,6 +115,8 @@ blockquote {
 
 button {
   background-color: transparent !important;
+  outline-color: black;
+  color: black;
 }
 
 .buttons {
@@ -122,12 +124,24 @@ button {
   place-items: center;
 }
 
+pre {
+  margin: 0.1rem;
+}
+
 pre code {
+  display: inline-block;
   background-color: rgba(245, 255, 250, 0.25) !important;
   border-radius: 0.25rem;
+  overflow-x: auto;
+  max-width: 100%;
+  /* visibility: hidden; */
 }
 
 code {
   background-color: rgba(245, 255, 250, 0.25) !important;
   border-radius: 0.125rem;
+}
+
+.hljs {
+  line-height: normal;
 }

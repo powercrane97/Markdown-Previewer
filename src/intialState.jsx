@@ -9,7 +9,7 @@ Here is some code: \`alert("How are you feeling today?")\`
 //this is a multiline-code
 
 let name = "Alex";
-function sayHi(name) {alert("Hello, " + name);}
+function sayHi(name) {alert("Hello, " + name)}
 \`\`\`
 
 - Also there are lists
