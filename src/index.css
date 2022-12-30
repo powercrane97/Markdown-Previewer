@@ -3,6 +3,7 @@
   font-size: 16px;
   line-height: normal;
   font-weight: 400;
+  background-color: linear-gradient(to bottom, #00b2cb, #ffa200);
 
   /* color-scheme: light dark; */
   /* color: rgba(255, 255, 255, 0.87); */
@@ -59,6 +60,7 @@ button:hover {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
+    background-color: linear-gradient(to bottom, #00b2cb, #ffa200) !important;
   }
   a:hover {
     color: #747bff;
