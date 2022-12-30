@@ -1,6 +1,7 @@
 body {
   background: linear-gradient(to bottom, #00b2cb, #ffa200);
   width: 100%;
+  overflow-x: hidden;
 }
 
 #root {
