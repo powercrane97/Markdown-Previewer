@@ -19,9 +19,9 @@ marked.setOptions({
 
 function Preview({ content, onClick, toggled }) {
   const markedContent = marked(content);
-
+  const fullscreen = toggled ? " fullscreen" : "";
   return (
-    <div className='preview-wrapper'>
+    <div className={"preview-wrapper" + fullscreen}>
       <div className='tab'>
         <span>Preview</span>
         <Buttons onClick={onClick} toggled={toggled} />

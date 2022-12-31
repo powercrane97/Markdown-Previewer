@@ -3,6 +3,7 @@ import "./App.css";
 import Editor from "./Editor";
 import Preview from "./Preview";
 import initialState from "./intialState";
+
 function App() {
   const [input, setInput] = useState(initialState);
   const [fullEditor, setFullEditor] = useState(false);

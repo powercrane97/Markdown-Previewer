@@ -3,9 +3,9 @@
   font-size: 16px;
   line-height: normal;
   font-weight: 400;
-  background-color: linear-gradient(to right, #00b2cb, #ffa200);
+  background: linear-gradient(to bottom, #00b2cb, #ffa200);
 
-  /* color-scheme: light dark; */
+  color-scheme: light dark;
   /* color: rgba(255, 255, 255, 0.87); */
   /* background-color: #242424; */
 
@@ -59,7 +59,50 @@ button:hover {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background-color: black;
+    background: rgb(58, 58, 60);
+    color: white !important;
+  }
+  textarea,
+  button,
+  .tab span,
+  #preview {
+    color: white;
+  }
+  textarea {
+    caret-color: white;
+    caret-shape: underscore;
+  }
+  body {
+    background: linear-gradient(
+      to bottom,
+      #565656,
+      #464f5e,
+      #384864,
+      #2a416a,
+      #1c3a70,
+      #0e3376,
+      #002c7c
+    );
+  }
+  #preview h1,
+  #preview h2 {
+    border-color: white;
+  }
+  .filter-white {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(14deg)
+      brightness(103%) contrast(101%);
+  }
+  p img {
+    filter: invert(1);
+  }
+  .tab {
+    border-bottom: white solid 1px;
+  }
+  .editor-wrapper {
+    background-color: transparent;
+  }
+  .preview-wrapper {
+    background-color: transparent;
   }
 }
 

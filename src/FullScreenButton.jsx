@@ -5,7 +5,7 @@ function FullScreenButton({ onClick, toggled }) {
   return (
     <button className='fullscreen-btn' onClick={onClick}>
       <img
-        className='fullscreen-img'
+        className='fullscreen-img filter-white'
         src={toggled ? FullscreenExit : Fullscreen}
       />
     </button>
