@@ -9,8 +9,11 @@ It has a basic editor which supports:
 - Markdown Syntax
 - Code highlighting(JavaScript, HTML, CSS)
 
+## Live 🕸
+https://powercrane97.github.io/Markdown-Previewer/
+
 
 
 ## Roadmap
 
-- Add responsivness and dark mode support
+- [ ] Add responsivness and dark mode support
